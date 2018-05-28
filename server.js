@@ -49,7 +49,6 @@ app.get('/', function(req, res){
 var yo = fs.readFileSync("output.json").toString();
 
 
-
 //app.get('/eth', function(req, res){
 //  url = 'https://coinranking.com/coin/ethereum-eth';
 //
@@ -108,8 +107,9 @@ var accountSid = 'AC5e4b48dbd5d0885a1b5a35146861a235'; // Your Account SID from 
  .then((message) => console.log(message.sid));
 
 
-app.listen('3000')
-console.log('Server runnning on port 3000');
+app.listen(process.env.PORT || 3000, () => {
+console.log('server is up on port 3000');
+});
 exports = module.exports = app;
 
 
