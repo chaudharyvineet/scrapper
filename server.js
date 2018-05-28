@@ -43,7 +43,7 @@ app.get('/', function(req, res){
       console.log('File successfully written! - Check your project directory for the output.json file');
     })
 
-    res.send('Check your console!')
+    res.send('Message sent to +91 7015386369')
   })
 })
 var yo = fs.readFileSync("output.json").toString();
