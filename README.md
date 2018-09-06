@@ -1,1 +1,1 @@
-# crypto-scrapper
+# cryptocurrency-scrapper
